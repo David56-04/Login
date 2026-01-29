@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="menu-container">
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="menu-icon">
+    <span class="icon-open">☰</span>
+    <span class="icon-close">✖</span>
+  </label>
+
+  
+  <label for="menu-toggle" class="menu-overlay"></label>
+
+  <nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Perfil</a>
+    <a href="#">Configuración</a>
+    <a href="#">Cerrar sesión</a>
+  </nav>
+</div>
+
+<fieldset>
+  <img src="login_bueno.png" alt="">
+  <h1>Iniciar Sesión</h1>
+
+  <form action="#" method="post" autocomplete="on">
+    <legend>Datos de acceso</legend>
+
+    <input type="text" id="usuario" name="usuario" placeholder="usuario o correo" required>
+    <br><br>
+
+    
+    <div class="password-box">
+      <input type="password" id="password" name="password" placeholder="********" required>
+      <span class="eye">👁️</span>
+    </div>
+
+    <br><br>
+
+    <button type="submit" class="btn-login">Iniciar sesión</button>
+  </form>
+
+  <br>
+
+  <input type="checkbox" id="recordar" name="recordar">
+  <label for="recordar">Recordarme en este dispositivo</label>
+
+  <br><br>
+
+  <p>
+    <small>
+      <a href="verificar_contraseña.html">Olvidaste la contraseña?</a> |
+      <a href="crear_contraseña.html">crear una.</a>
+    </small>
+  </p>
+</fieldset>
+
+</body>
+</html>
